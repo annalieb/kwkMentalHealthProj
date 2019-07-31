@@ -1,0 +1,101 @@
+/* CSS for all pages */
+
+/* THEME COLORS:
+light blue: #90DCD0
+medium blue: #2FBDBD
+dark blue: #0C9BBD
+darker blue: #2a889f
+
+light yellow: #fff67d
+golden yellow: #FFE625
+yellow-orange: #FFCE06
+orange: #FFB700
+*/
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 40px;
+}
+
+nav {
+  display: block;
+  background-color: #fff67d;
+  text-align: center;
+}
+
+input[type="button"] {
+  font-family: 'Nunito', sans-serif;
+}
+#homeLogo {
+  /* background-color: transparent; */
+  height: 30%;
+  /* width: 25%; */
+  margin: -10%;
+}
+.logoBackground {
+  background-color: #0C9BBD;
+  margin: 0px;
+}
+#subheader {
+  margin-top: -30px;
+}
+
+body {
+  background-color: #90DCD0;
+}
+
+.homeBody {
+  text-align: center;
+}
+
+.welcome {
+  font-size: 450%;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav {
+  /* font-family: 'Covered By Your Grace', cursive; */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  background-color: #fff67d;
+}
+.mission {
+  padding: 5%;
+  border: 5px dashed white;
+  border-radius: 25px;
+}
+
+.factsDiv {
+  border: 5px dashed white;
+  padding: 5%;
+  border-radius: 25px;
+}
+li {
+  float: left;
+}
+
+li {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li:hover {
+  background-color: #FFE625;
+}

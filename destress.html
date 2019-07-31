@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+ <!-- HTML for de-stress page -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>De-stress</title>
+
+  </head>
+  <body>
+    <nav>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="info.html">Info and Resources</a></li>
+      <li><a href="destress.html">De-stress</a></li>
+    </nav>
+    <section id="title">
+      <h1>Keep kalm... and de-stress</h1>
+      <h3 id="subheader">Tips for peace and happiness</h3>
+    </section>
+    <section class="quiz">
+
+    </section>
+    <section class="positivity-generator">
+      <p>Click the button below to brighten your day :) </p>
+      <input id="positivity-generator" type="button" value="Generate positivity">
+      <br></br>
+      <p id="messageOutput"></p>
+      <br></br>
+      <p>Contribute to the collection! Enter your own positivity phrase in the box below. </p>
+      <input id="new-msg" type="text" placeholder="Positivity phrase">
+      <input id="add-positivity" type="submit" value="Add to collection">
+      <p>Click below for full list of positive messages</p>
+      <input id="fullListButton" type="button" value="Full list">
+      <p id="fullList"></p>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="./destress.js">
+    </script>
+  </body>
+</html>
