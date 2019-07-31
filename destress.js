@@ -33,14 +33,12 @@ function addMsg() {
 }
 
 var fullList = $("#fullList"); // the text
-var fullListButton = $("fullListButton");
+var fullListButton = $("#fullListButton");
 fullListButton.on("click", displayFullList);
 
 function displayFullList() {
-  var output = "";
+  var output = $("#fullList");
   for (var i = 0; i < positivityMessages.length; i++) {
-    output = output.concat(positivityMessages[i])
-    console.log(output);
+    output.append(`<p>${positivityMessages[i]}</p>`)
   }
-  fullList.text(output);
 }
