@@ -2,9 +2,9 @@
 
 // QUIZ
 var QUIZ_OUTCOMES = ["You enjoy being active and getting connected with your body. Next time you feel down, try some yoga poses to center yourself. ",
-"You enjoy your relaxation time, but you also like to stay busy. If you're feeling sad or stressed, make some hot tea and ",
+"You enjoy your relaxation time, but you also like to stay busy. If you're feeling sad or stressed, make some hot tea and take a moment to yourself. ",
 "You are calm by nature and gravitate towards peaceful environments. When you feel overwhelmed, try some breathing exercises to refocus your energy. ",
-"You have a creative spirit. You're also good at concentrating on the things you care about. If you feel anxious, try drawing or coloring as a calm "]
+"You have a creative spirit. You're also good at concentrating on the things you care about. If you feel anxious, try drawing or coloring as a calming activity. "]
 
 var resultText = $("#result");
 
