@@ -1,63 +1,80 @@
-<!DOCTYPE html>
- <!-- HTML for de-stress page -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-    <title>De-stress</title>
+/* JS for de-stress page */
 
-  </head>
-  <body>
-    <nav>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="info.html">Info and Resources</a></li>
-      <li><a href="destress.html">De-stress</a></li>
-    </nav>
-    <section id="title">
-      <h1>Keep kalm... and de-stress</h1>
-      <h3 id="subheader">Tips for peace and happiness</h3>
-    </section>
+// QUIZ
+var QUIZ_OUTCOMES = ["You enjoy being active and getting connected with your body. Next time you feel down, try some yoga poses to center yourself. ",
+"You enjoy your relaxation time, but you also like to stay busy. If you're feeling sad or stressed, make some hot tea and ",
+"You are calm by nature and gravitate towards peaceful environments. When you feel overwhelmed, try some breathing exercises to refocus your energy. ",
+"You have a creative spirit. You're also good at concentrating on the things you care about. If you feel anxious, try drawing or coloring as a calm "]
 
-    <section class="quiz">
-      <p>Take this quiz to find new ways to de-stress!</p>
-      <form class="quiz">
-        <article class="Question1">
-          <p>Question 1: </p>
-          <input type="radio" name="Q1" value="Option 1" class="answer"> <br>
-          <input type="radio" name="Q1" value="Option 2" class="answer"> <br>
-          <input type="radio" name="Q1" value="Option 3" class="answer"> <br>
-          <input type="radio" name="Q1" value="Option 4" class="answer"> <br>
-        </article>
-        <article class="Question2">
-          <p>Question 2: </p>
-          <input type="radio" name="Q2" value="Option 1"> <br>
-          <input type="radio" name="Q2" value="Option 2"> <br>
-          <input type="radio" name="Q2" value="Option 3"> <br>
-          <input type="radio" name="Q2" value="Option 4"> <br>
-        </article>
-        <input id="submitQuiz" type="submit">
-        <p id="Result"></p>
-      </form>
-    </section>
+var resultText = $("#result");
 
-<br>
-    <section class="positivity-generator">
-      <p>Click the button below to brighten your day :) </p>
-      <input id="positivity-generator" type="button" value="Generate positivity">
-      <p id="messageOutput"></p>
-      <br></br>
-      <p>Contribute to the collection! Enter your own positivity phrase in the box below. </p>
-      <input id="new-msg" type="text" placeholder="Positivity phrase">
-      <input id="add-positivity" type="submit" value="Add to collection">
-      <p>Click below for full list of positive messages</p>
-      <input id="fullListButton" type="button" value="Full list">
-      <div id="fullList"></div>
-    </section>
+var submitQuiz = $("#submitQuiz");
+submitQuiz.on("click", getResult);
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-    </script>
-    <script src="./destress.js">
-    </script>
-  </body>
-</html>
+function getResult() {  // repeat in for loop for all the questions?
+  var total = 0;
+  for (var i = 1; i <= 4; i++) {
+    if (document.getElementById(`Q${i}OP1`).checked) {
+      total += 1;
+    } else if (document.getElementById(`Q${i}OP2`).checked) {
+      total += 2;
+    } else if (document.getElementById(`Q${i}OP3`).checked) {
+      total += 3;
+    } else if (document.getElementById(`Q${i}OP4`).checked) {
+      total += 4;
+    }
+  }
+
+  var result = Math.round (total / 4);
+  console.log(total);
+  console.log(result);
+  resultText.text(QUIZ_OUTCOMES[result]);
+
+}
+
+// POSITIVE MESSAGE GENERATOR
+
+var positivityMessages = [
+  "Never give up",
+  "Believe in yourself",
+  "Your present situation is not your final destination",
+  "The best is yet to come",
+  "Mistakes can help you learn and grow",
+  "Surround yourself with love & positivity",
+  "You are capable of amazing things",
+  "Just keep going",
+"The rainbow only comes after rain",
+];
+
+var messageText = $("#messageOutput");
+
+var generateButton = $("#positivity-generator");
+generateButton.on("click", displayMsg);
+
+function displayMsg() {
+  var randNum = Math.floor(Math.random() * positivityMessages.length);
+  var message = positivityMessages[randNum];
+  messageText.text(message);
+}
+
+var addButton = $("#add-positivity");
+var textMsg = $("#new-msg");
+addButton.on("click", addMsg);
+
+function addMsg() {
+  newMsg = textMsg.val();
+  console.log(newMsg);
+  positivityMessages.push(newMsg);
+  console.log(positivityMessages);
+}
+
+var fullList = $("#fullList"); // the text
+var fullListButton = $("#fullListButton"); // the button
+fullListButton.on("click", displayFullList);
+
+function displayFullList() {
+  var output = $("#fullList");
+  for (var i = 0; i < positivityMessages.length; i++) {
+    output.append(`<p>${positivityMessages[i]}</p>`);
+  }
+}
