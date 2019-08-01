@@ -18,9 +18,30 @@
       <h1>Keep kalm... and de-stress</h1>
       <h3 id="subheader">Tips for peace and happiness</h3>
     </section>
-    <section class="quiz">
 
+    <section class="quiz">
+      <p>Take this quiz to find new ways to de-stress!</p>
+      <form class="quiz">
+        <article class="Question1">
+          <p>Question 1: </p>
+          <input type="radio" name="Q1" value="Option 1" class="answer"> <br>
+          <input type="radio" name="Q1" value="Option 2" class="answer"> <br>
+          <input type="radio" name="Q1" value="Option 3" class="answer"> <br>
+          <input type="radio" name="Q1" value="Option 4" class="answer"> <br>
+        </article>
+        <article class="Question2">
+          <p>Question 2: </p>
+          <input type="radio" name="Q2" value="Option 1"> <br>
+          <input type="radio" name="Q2" value="Option 2"> <br>
+          <input type="radio" name="Q2" value="Option 3"> <br>
+          <input type="radio" name="Q2" value="Option 4"> <br>
+        </article>
+        <input id="submitQuiz" type="submit">
+        <p id="Result"></p>
+      </form>
     </section>
+
+<br>
     <section class="positivity-generator">
       <p>Click the button below to brighten your day :) </p>
       <input id="positivity-generator" type="button" value="Generate positivity">
@@ -33,6 +54,7 @@
       <input id="fullListButton" type="button" value="Full list">
       <div id="fullList"></div>
     </section>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
     </script>
     <script src="./destress.js">
