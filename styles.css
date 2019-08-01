@@ -100,9 +100,6 @@ nav {
 
 li {
   float: left;
-}
-
-li {
   display: block;
   color: white;
   text-align: center;
