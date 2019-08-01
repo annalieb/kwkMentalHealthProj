@@ -24,3 +24,4 @@ var fact = Math.floor(Math.random() * factList.length);
 var factOutput = factList[fact];
 output.text(factOutput);
 }
+
