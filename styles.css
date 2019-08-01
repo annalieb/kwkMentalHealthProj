@@ -31,25 +31,43 @@ input[type="button"] {
   font-family: 'Nunito', sans-serif;
 }
 #homeLogo {
+  display: flex;
+justify-content: center;
   /* background-color: transparent; */
-  height: 30%;
-  /* width: 25%; */
+  height: 25%;
+  /* width: 75%; */
   margin: -10%;
+
+
 }
 .logoBackground {
   background-color: #0C9BBD;
-  margin: 0px;
+  /* margin: 0px; */
+  margin-left: 23%;
+margin-right: 23%
+  /* width: 75%; */
+/* opacity: .9; */
 }
+
+/* #container {
+  margin-left: 200px;
+  margin-right: 200px;
+} */
 #subheader {
   margin-top: -30px;
 }
 
 body {
   background-color: #90DCD0;
+background-image: url('https://media.giphy.com/media/3ov9jLYWb4zCjGfqIE/giphy.gif');
+  background-size: 25%;
+
 }
 
 .homeBody {
   text-align: center;
+  /* background-image: url('https://media.giphy.com/media/3ov9jLYWb4zCjGfqIE/giphy.gif');
+  opacity: .5; */
 }
 
 .welcome {
@@ -98,4 +116,100 @@ li {
 /* Change the link color to #111 (black) on hover */
 li:hover {
   background-color: #FFE625;
+}
+
+.aboutUs{
+  border: 5px dashed white;
+  padding: 5%;
+  border-radius: 25px;
+}
+
+.bios {
+  display: flex;
+  justify-content: space-between;
+}
+/* .navLogo {
+  height: 5%;
+  margin: -10%;
+} */
+
+input[type=button] {
+  background-color: #fff67d;
+  border: none;
+  color: black;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+input[type=button]:hover {
+  background-color: #FFE625;
+  border: none;
+  color: black;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.24),0 5px 20px 0 rgba(0,0,0,0.19);
+}
+.anna{
+  display: flex;
+  background-color: #0C9BBD;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  width: 30%;
+  flex-wrap: wrap;
+  float: left;
+  text-align: center;
+  justify-content: center;
+
+}
+.sophia{
+  background-color: #0C9BBD;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  width: 30%;
+  flex-wrap: wrap;
+  float: left;
+text-align: center;
+justify-content: center;
+
+}
+.trinity{
+background-color: #0C9BBD;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  width: 30%;
+  flex-wrap: wrap;
+text-align: center;
+justify-content: center;
+
+}
+h3{
+  text-align: center;
+}
+#definitions{
+padding: 5px;
+height: 250px;
+border: 5px dashed white;
+}
+.links{
+  display: flex;
+  flex-direction: row;
+}
+h1{
+  text-align: center;
+}
+
+.homeTitles {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 150%;
+}
+.aboutPhotos {
+  height: 10%;
 }
