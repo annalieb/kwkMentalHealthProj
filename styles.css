@@ -54,7 +54,7 @@ input[type=button] {
   text-decoration: none;
   display: inline-block;
   font-size: 12px;
-
+  /* font-family: 'Covered By Your Grace', cursive; */
 }
 
 input[type=button]:hover {
@@ -67,6 +67,7 @@ input[type=button]:hover {
   display: inline-block;
   font-size: 12px;
   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.24),0 5px 20px 0 rgba(0,0,0,0.19);
+  /* font-family: 'Covered By Your Grace', cursive; */
 }
 
 
@@ -98,16 +99,22 @@ nav {
   background-color: #fff67d;
 }
 
-li {
+.navLinks {
   float: left;
+}
+
+.navLinks {
   display: block;
-  color: white;
+  color: #0C9BBD;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 125%;
+
 }
 
-li:hover {
+.navLinks:hover {
   background-color: #FFE625;
 }
 
@@ -344,12 +351,12 @@ text-align: center;
 
 
 
+
 /* destress page css */
 
 .biggerP {
   font-size: 25px;
 }
-
 
 .quizMain {
   display: flex;
@@ -370,14 +377,11 @@ text-align: center;
 #subheader {
   margin-top: -30px;
 }
-/* .positivity-generator {
-  display: flex;
+.positivity-generator {
   background-color: #0C9BBD;
   padding: 2%;
   margin-right: 25%;
   margin-left: 25%;
   height: 10%;
-  justify-content: center;
-  text-align: left;
-  flex-wrap: wrap;
-} */
+  text-align: center;
+}
