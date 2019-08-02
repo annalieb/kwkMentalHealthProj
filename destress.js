@@ -78,4 +78,3 @@ function displayFullList() {
     output.append(`<p>${positivityMessages[i]}</p>`);
   }
 }
-
