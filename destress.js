@@ -43,7 +43,7 @@ var positivityMessages = [
   "Surround yourself with love & positivity",
   "You are capable of amazing things",
   "Just keep going",
-"The rainbow only comes after rain",
+  "The rainbow only comes after rain",
 ];
 
 var messageText = $("#messageOutput");
