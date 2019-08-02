@@ -127,8 +127,6 @@ nav {
 /* home page css */
 .homeBody {
   text-align: center;
-  /* background-image: url('https://media.giphy.com/media/3ov9jLYWb4zCjGfqIE/giphy.gif');
-  opacity: .5; */
 }
 
 .welcome {
@@ -138,75 +136,61 @@ nav {
   background-attachment: fixed;
   display: flex;
   justify-content: center;
-  /* background-color: transparent; */
-  height: 25%;
-  /* width: 75%; */
-  margin: -10%;
+  width: 70%;
+  margin: 10%;
 }
 .logoBackground {
-  background-attachment: fixed;
   background-color: #0C9BBD;
-  /* margin: 0px; */
-  margin-left: 19%;
-  margin-right: 23%
-  /* width: 75%; */
-  /* opacity: .9; */
+  margin-left: 10%;
+  margin-right: 10%
 }
 
 .aboutUs {
-  /* border: 5px dashed white; */
   padding: 5%;
   border-radius: 25px;
   height: 50%;
 }
-
 .bios {
   display: flex;
   justify-content: space-between;
-  text-align: center
-  padding: 2%;
 }
-
 .anna {
   display: flex;
   background-color: #0C9BBD;
-  /* flex-direction: column; */
-  align-items: flex-start;
   width: 30%;
   flex-wrap: wrap;
   text-align: center;
-  justify-content: center;
-  height: 700px;
-  margin: 2%
+  padding: 1%;
+  margin: 2%;
+  float: left;
+  object-fit: contain;
 }
 .sophia {
   background-color: #0C9BBD;
   display: flex;
-  /* flex-direction: column; */
-  align-items: flex-start;
   width: 30%;
   flex-wrap: wrap;
   text-align: center;
-  justify-content: center;
-  height: 700px;
-  margin: 2%
+  padding: 1%;
+  margin: 2%;
+  float: left;
+  object-fit: contain;
 }
 .trinity{
   background-color: #0C9BBD;
   display: flex;
-  /* flex-direction: column; */
-  align-items: flex-start;
   width: 30%;
   flex-wrap: wrap;
   text-align: center;
-  justify-content: center;
-  height: 700px;
-  margin: 2%
+  padding: 1%;
+  margin: 2%;
+  object-fit: contain;
 }
 
 .aboutPhotos {
   display: flex;
-  height: 50%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .mission {
@@ -227,7 +211,6 @@ nav {
 
   display: flex;
   background-color: #0C9BBD;
-/*  padding: 2%;  */
   margin-right: 10%;
   margin-left: 10%;
   height: 5%;
@@ -236,10 +219,6 @@ nav {
   text-align: center;
   flex-wrap: wrap;
 }
-/* .factButton {
-  width: 10%;
-text-align: center;
-} */
 .homeTitles {
   font-family: 'Covered By Your Grace', cursive;
   font-size: 150%;
@@ -272,7 +251,7 @@ text-align: center;
   margin-left: 10%;
   height: 5%;
   justify-content: center;
-  text-align: left;
+  text-align: center;
   flex-wrap: wrap;
 
 }
@@ -287,6 +266,7 @@ text-align: center;
   justify-content: center;
   text-align: left;
   flex-wrap: wrap;
+  text-align: center;
   margin-top: 5%;
 }
 .paragraph3{
@@ -299,19 +279,7 @@ text-align: center;
   height: 5%;
   justify-content: center;
   text-align: left;
-  flex-wrap: wrap;
-  margin-top: 5%;
-}
-.paragraph3{
-  height: 250px;
-  display: flex;
-  background-color: #0C9BBD;
-  padding: 2%;
-  margin-right: 10%;
-  margin-left: 10%;
-  height: 5%;
-  justify-content: center;
-  text-align: left;
+  text-align: center;
   flex-wrap: wrap;
   margin-top: 5%;
 }
@@ -327,7 +295,9 @@ text-align: center;
   text-align: left;
   flex-wrap: wrap;
   margin-top: 5%;
+  text-align: center;
 }
+
 .resources{
   height: 250px;
   display: flex;
@@ -336,16 +306,14 @@ text-align: center;
   margin-right: 10%;
   margin-left: 10%;
   height: 5%;
-  text-align: left;
+  text-align: center;
   flex-wrap: wrap;
   margin-top: 5%;
 }
 
-.links{
-  display: flex;
-  flex-direction: row;
+.links {
+  text-align: left;
 }
-
 
 
 
